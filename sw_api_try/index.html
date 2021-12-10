@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SW API TRY</title>
+
+  <!-- MYCSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="root">
+    <main>
+
+      
+      <h1>SWAPI + AXIOS TRY</h1>
+      <ul>
+        <li v-for="pg in pgs">
+          <h2>{{pg.name}}</h2>
+          <span>Height: {{pg.height}}</span>
+          <span>Mass: {{pg.mass}} kg</span>
+          <span>Hair color: {{pg.hair_color}}</span>
+          <span>Skin tone: {{pg.skin_color}}</span>
+          <span>Eye color: {{pg.eye_color}}</span>
+          <span>Birth year: {{pg.birth_year}}</span>
+          <span>Gender: {{pg.gender}}</span>
+          <span>Homeworld: {{pg.homeworld}}</span>
+        </li>
+      </ul>
+
+    </main>
+  </div>
+
+  <!-- AXIOS -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- VUE development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <!-- MYSCRIPT -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
